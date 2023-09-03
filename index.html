@@ -1,0 +1,63 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <title>Yummy</title> 
+</head>
+
+<body class="bg-black position-relative">
+    <div class="spinner-home">
+        <i class="fa-solid fa-spinner fa-spin"></i>
+    </div>
+    <div class="sidebar d-flex min-vh-100 position-fixed top-0">
+        <div class="bg-black text-white " id="side">
+            <div class="px-4 pt-4 d-flex flex-column gap-1 links overflow-hidden">
+                <p data-target="#search" onclick="search()">Search</p>
+                <p data-target="#category" onclick="categories()">Categories</p>
+                <p data-target="#area" onclick="getArea()">Area</p>
+                <p data-target="#ingredient" onclick="getIngredient()">Ingredients</p>
+                <p data-target="#contact" onclick="Contact()">Contact us</p>
+            </div>
+            <div class="px-4">
+                <ul class="list-unstyled d-flex gap-1">
+                    <li><i class="fa-brands fa-facebook"></i></li>
+                    <li><i class="fa-brands fa-twitter"></i></li>
+                    <li><i class="fa-solid fa-globe"></i></li>
+                </ul>
+                <p>Copyright Â© 2019 All Rights
+                    Reserved.</p>
+            </div>
+        </div>
+        <div class="px-2  py-4 bg-white d-flex flex-column justify-content-between align-items-center">
+            <img src="img/logo.png" width="50" alt="">
+            <i onclick="Show()" class="fs-1 fa-solid fa-bars" id="open"></i>
+            <i onclick="Hide()" class="fs-1 fa-solid fa-xmark hidden" id="close"></i>
+            <div class="d-flex flex-column justify-content-between align-items-center ">
+                <i class="fa-solid fa-globe pb-1"></i>
+                <i class="fa-solid fa-share-nodes"></i>
+            </div>
+        </div>
+    </div>
+    <div class="mainData">
+        <section id="data">
+            <div class="container">
+                <div>
+                    <div class="row gy-3" id="meals">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+</body>
+<script src="js/code.jquery.com_jquery-3.7.0.min.js"></script>
+<script src="js/bootstrap.bundle.min.js"></script>
+<script src="js/code.js"></script>
+
+</html>

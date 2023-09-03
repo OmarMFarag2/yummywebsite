@@ -1,0 +1,87 @@
+a{
+    text-decoration: none;
+    color: white;
+}
+#side {
+    width: 250;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: hidden;
+}
+.links p{
+    position: relative;
+    cursor: pointer;
+    top: 400;
+}
+i{
+    cursor: pointer;
+}
+.sidebar {
+    left: -250;
+    z-index: 5;
+}
+.hidden{
+    display: none !important;
+}
+input::placeholder{
+    color: gray !important;
+}
+.overlay{
+    width: 100%;
+    height: 100%;
+    transform: translateY(110%);
+    position: absolute;
+    bottom:0;
+    background-color: rgba(255, 255, 255, 0.784);
+    transition: transform 0.5s;
+    font-size: 30px;
+}
+.overlay p{
+    padding: 10px 20px;
+}
+.item:hover .overlay{
+    transform: translateY(0);
+}
+.spinner,.spinner-home{
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    color: white;
+    font-size: 80px;
+    top: 0;
+    height: 100vh;
+    width: 100%;
+    background-color: black;
+    z-index: 1;
+    overflow: hidden;
+}
+.spinner-home{
+    display: flex;
+    z-index: 10;
+}
+.container{
+    padding: 30px 0;
+}
+.item{
+    cursor: pointer;
+}
+#ingredients div{
+    background-color: rgb(96, 196, 196);
+    color: black;
+}
+#tags div{
+    color: black;
+    background-color: #f5c2c7;
+}
+.btn.disabled{
+    background-color: transparent;
+    border: solid 1px crimson;
+    color: crimson;
+}
+#contact p{
+    background-color: #f5c2c7;
+    color: #842029;;
+}
