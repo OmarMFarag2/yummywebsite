@@ -1,5 +1,5 @@
 let inc = 100;
-$("#meals").ready(function () {
+$(document).ready(function () {
     $(".spinner-home").fadeOut(800)
 })
 function Show() {
@@ -433,4 +433,11 @@ function validateRepassword(repassword) {
     }
     isEnabled();
 }
+function spinner(){
+    $(".mainData").html(`
+    <div class="spinner">
+        <i class="fa-solid fa-spinner fa-spin"></i>
+    </div>`)
+}
+spinner()
 getMealByName("")
