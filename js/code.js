@@ -434,7 +434,7 @@ function validateRepassword(repassword) {
     isEnabled();
 }
 function spinner(){
-    $(".mainData").html(`
+    $(".mainData").append(`
     <div class="spinner">
         <i class="fa-solid fa-spinner fa-spin"></i>
     </div>`)
