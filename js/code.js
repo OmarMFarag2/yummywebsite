@@ -1,5 +1,5 @@
 let inc = 100;
-$(document).ready(function () {
+$("#meals").ready(function () {
     $(".spinner-home").fadeOut(800)
 })
 function Show() {
